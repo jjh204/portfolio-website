@@ -242,11 +242,29 @@ button:focus,
   svg {
     max-width: 400px;
   }
+
+  .img_logo {
+      max-width: 90px;
+      max-height: 20px;
+    }
+
+    .navigation-list li {
+      font-size: 12px;
+    }
 }
 
 @media all and (min-width: 525px) and (max-width: 780px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .img_logo {
+    max-width: 190px;
+    max-height: 40px;
+  }
+
+  .navigation-list li {
+    font-size: 14px;
   }
 }
 
@@ -265,17 +283,7 @@ button:focus,
     font-size: 30px;
   }
 
-  .page-header {
-    display: block;
-  }
-
   .navigation-list li {
-    display: inline;
-    margin: 5px;
-  }
-
-  .img_logo {
-    width: 225px;
-    height: 60px;
+    margin-left: 20px;
   }
 }
