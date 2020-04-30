@@ -1,40 +1,29 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-:root {
-  --primary-color: #2e4045;
-  --secondary-color: #66afad;
-  --secondary-color-muted: #83adb5;
-  --background: #fcfbfa;
-  --font-weight: 400;
-  --font-weight-bold: 700;
-  --font-size: 16px;
-  --font-size-heading: 40px;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--primary-color);
+  background-color: #fcfbfa;
+  color: #2e4045;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: var(--font-weight);
-  font-size: var(--font-size);
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
   text-align: center;
   }
 
 h1 {
   font-family: 'Cardo', serif;
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-heading);
+  font-weight: 700;
+  font-size: 40px;
   font-variant: small-caps;
 }
 
 a {
-  color: var(--secondary-color);
+  color: #66afad;
 }
 
 .img_logo {
@@ -42,7 +31,7 @@ a {
 }
 
 a:visited {
-  color: var(--secondary-color-muted);
+  color: #83adb5;
 }
 
 a:hover, a:focus {
@@ -50,7 +39,7 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: var(--primary-color);
+  color: #2e4045;
 }
 
 .page-header {
@@ -59,7 +48,7 @@ a:active {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 0.2px solid var(--secondary-color-muted);
+  border-bottom: 0.2px solid #83adb5;
   }
 
 .page-header_item {
@@ -100,13 +89,27 @@ a:active {
   border-radius: 40%;
 }
 
-button,
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #2e4045;
+  color: #fcfbfa;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.7s opacity;
+  -o-transition: 0.7s opacity;
+  transition: 0.7s opacity;
+}
+
 .button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primary-color);
-  color: var(--background);
+  background-color: #2e4045;
+  color: #fcfbfa;
   text-decoration: none;
   padding: 8px;
   border-radius: 3px;
@@ -125,7 +128,7 @@ button:focus,
 }
 
 .skills-list {
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
 }
 
 @-webkit-keyframes bird1-move {
@@ -182,34 +185,6 @@ button:focus,
           animation: 12s bird2-move infinite alternate linear;
 }
 
-@-webkit-keyframes mermaid-move {
-  from {
-    -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5)
-  }
-  to {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1)
-  }
-}
-
-@keyframes mermaid-move {
-  from {
-    -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5)
-  }
-  to {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1)
-  }
-}
-
-.mermaid {
-  -webkit-animation: 4s mermaid-move infinite alternate linear;
-          animation: 4s mermaid-move infinite alternate linear;
-}
-
-/*Grid fallback - how to code*/
 .grid_item {
   display: inline-block;
   width: 33%;
@@ -225,8 +200,8 @@ button:focus,
 }
 
 .grid_item {
-  background-color: var(--primary-color);
-  color: var(--background);
+  background-color: #2e4045;
+  color: #fcfbfa;
   padding: 10px;
   width: auto;
 }
@@ -272,7 +247,7 @@ button:focus,
 }
 
 .skype_email_links a {
-  color: var(--secondary-color);
+  color: #66afad;
 }
 
 .page_footer {
@@ -302,29 +277,20 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
-
-  .page-header {
-    display: block;
-  }
-
-  .navigation-list li {
-    display: inline;
-    margin: 5px;
-  }
-
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     }
 
   .portrait_img {
-    float: none;
-    margin: auto;
+      float: none;
+      margin: auto;
     }
 
   svg {
-    max-width: 400px;
+      max-width: 400px;
     }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -332,16 +298,6 @@ button:focus,
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
-
-  .navigation-list li {
-    display: block;
-    margin: 30px;
-    }
-
-    .img_logo {
-      width: 225px;
-      height: 60px;
-    }
 }
 
 @media all and (max-width: 780px) {
@@ -358,4 +314,14 @@ button:focus,
   h1 {
     font-size: 22px;
   }
+
+  .navigation-list li {
+    display: block;
+    margin: 30px;
+    }
+
+    .img_logo {
+      width: 225px;
+      height: 60px;
+    }
 }
