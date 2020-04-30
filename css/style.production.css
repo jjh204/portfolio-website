@@ -231,6 +231,10 @@ button:focus,
     grid-template-columns: 1fr;
   }
 
+  .profile {
+    margin: auto;
+  }
+
   .portrait_img {
     float: none;
   }
@@ -273,9 +277,5 @@ button:focus,
   .img_logo {
     width: 225px;
     height: 60px;
-  }
-
-  .profile {
-    margin: auto;
   }
 }
