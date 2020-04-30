@@ -282,14 +282,15 @@ button:focus,
     grid-template-columns: 1fr;
     }
 
-    svg {
-      max-width: 400px;
-    }
-
-    .portrait_img {
+  .portrait_img {
       float: none;
       margin: auto;
     }
+
+  svg {
+      max-width: 400px;
+    }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
