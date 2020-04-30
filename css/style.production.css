@@ -281,6 +281,14 @@ button:focus,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     }
+
+    #contact-form {
+      max-width: 400px;
+    }
+
+    svg {
+      max-width: 400px;      
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
