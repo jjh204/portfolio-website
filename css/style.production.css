@@ -237,7 +237,7 @@ button:focus,
 
   .portrait_img {
     float: none;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   svg {
