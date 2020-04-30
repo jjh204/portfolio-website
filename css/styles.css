@@ -269,13 +269,13 @@ button:focus,
     display: block;
   }
 
-  .navigation-list li {
-    display: inline;
-    margin: 5px;
-  }
-
   .img_logo {
     width: 225px;
     height: 60px;
+  }
+
+  .navigation-list li {
+    display: inline;
+    margin: 5px;
   }
 }
