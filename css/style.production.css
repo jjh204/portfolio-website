@@ -282,11 +282,6 @@ button:focus,
     grid-template-columns: 1fr;
     }
 
-    #contact-form {
-      max-width: 400px;
-      margin: 30px;
-    }
-
     svg {
       max-width: 400px;
     }
