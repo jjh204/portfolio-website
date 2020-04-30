@@ -5,7 +5,7 @@
   --background: #fcfbfa;
   --font-weight: 400;
   --font-weight-bold: 700;
-  --font-size: 16px;
+  --font-size: 18px;
   --font-size-heading: 40px;
 }
 
@@ -225,7 +225,7 @@ button:focus,
   height: 40px;
 }
 
-@media all and (max-width: 525px) {
+@media all and (max-width: 540px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -249,11 +249,13 @@ button:focus,
     }
 
     .navigation-list li {
-      font-size: 10px;
+      display: block;
+      margin: 10px;
+      font-size: 14px;
     }
 }
 
-@media all and (min-width: 525px) and (max-width: 780px) {
+@media all and (min-width: 540px) and (max-width: 780px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -264,7 +266,7 @@ button:focus,
   }
 
   .navigation-list li {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
