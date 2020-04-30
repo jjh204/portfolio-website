@@ -285,6 +285,11 @@ button:focus,
     svg {
       max-width: 400px;
     }
+
+    .portrait_img {
+      float: none;
+      margin: auto;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
