@@ -284,14 +284,8 @@ button:focus,
 
     #contact-form {
       max-width: 400px;
+      margin-left: 10px;
     }
-
-    #contact-name,
-    #contact-email,
-    #contact-tel,
-    #contact-message {
-        width: auto;
-      }
 
     svg {
       max-width: 400px;
