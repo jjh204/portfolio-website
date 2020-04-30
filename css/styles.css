@@ -271,6 +271,7 @@ button:focus,
     }
 
     .img_logo {
+      text-align: left;
       width: 225px;
       height: 60px;
     }
