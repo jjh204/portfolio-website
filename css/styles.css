@@ -21,7 +21,7 @@ body {
   font-size: var(--font-size);
   line-height: 1.6;
   text-align: center;
-  }
+}
 
 h1 {
   font-family: 'Cardo', serif;
@@ -42,7 +42,8 @@ a:visited {
   color: var(--secondary-color-muted);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -55,7 +56,7 @@ a:active {
   width: 100%;
   padding: 20px;
   border-bottom: 0.2px solid var(--secondary-color-muted);
-  }
+}
 
 .page-header_item {
   flex: 0 1 200px;
@@ -109,8 +110,8 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-    cursor: pointer;
-    opacity: 0.7;
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .skills-list {
@@ -121,6 +122,7 @@ button:focus,
   from {
     transform: translate(-2px, -69px);
   }
+
   to {
     transform: translate(10px, -75px);
   }
@@ -134,6 +136,7 @@ button:focus,
   from {
     transform: translate(-2px, -69px);
   }
+
   to {
     transform: translate(-10px, -75px);
   }
@@ -143,20 +146,7 @@ button:focus,
   animation: 12s bird2-move infinite alternate linear;
 }
 
-@keyframes mermaid-move {
-  from {
-    transform: scale(0.5, 0.5)
-  }
-  to {
-    transform: scale(1, 1)
-  }
-}
-
-.mermaid {
-  animation: 4s mermaid-move infinite alternate linear;
-}
-
-/*Grid fallback - how to code*/
+/* Grid fallback - how to code */
 .grid_item {
   display: inline-block;
   width: 33%;
@@ -235,30 +225,25 @@ button:focus,
   height: 40px;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 525px) {
   .grid {
     grid-template-columns: 1fr;
-    }
+  }
 
-    .portrait_img {
+  .portrait_img {
     float: none;
     margin: auto;
-    }
+  }
 
-    svg {
+  svg {
     max-width: 400px;
-    }
+  }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 525px) and (max-width: 780px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-
-    .img_logo {
-      width: 225px;
-      height: 60px;
-    }
 }
 
 @media all and (max-width: 780px) {
@@ -273,7 +258,7 @@ button:focus,
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .page-header {
@@ -286,6 +271,7 @@ button:focus,
   }
 
   .img_logo {
-    text-align: left;
+    width: 225px;
+    height: 60px;
   }
 }
