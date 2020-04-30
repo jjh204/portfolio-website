@@ -249,7 +249,7 @@ button:focus,
     }
 
     .navigation-list li {
-      font-size: 12px;
+      font-size: 10px;
     }
 }
 
@@ -259,8 +259,8 @@ button:focus,
   }
 
   .img_logo {
-    max-width: 190px;
-    max-height: 40px;
+    max-width: 160px;
+    max-height: 20px;
   }
 
   .navigation-list li {
