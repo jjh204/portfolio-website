@@ -185,6 +185,34 @@ button:focus,
           animation: 12s bird2-move infinite alternate linear;
 }
 
+@-webkit-keyframes mermaid-move {
+  from {
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5)
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1)
+  }
+}
+
+@keyframes mermaid-move {
+  from {
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5)
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1)
+  }
+}
+
+.mermaid {
+  -webkit-animation: 4s mermaid-move infinite alternate linear;
+          animation: 4s mermaid-move infinite alternate linear;
+}
+
+/*Grid fallback - how to code*/
 .grid_item {
   display: inline-block;
   width: 33%;
@@ -277,20 +305,29 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
+
+  .page-header {
+    display: block;
+  }
+
+  .navigation-list li {
+    display: inline;
+    margin: 5px;
+  }
+
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     }
 
   .portrait_img {
-      float: none;
-      margin: auto;
+    float: none;
+    margin: auto;
     }
 
   svg {
-      max-width: 400px;
+    max-width: 400px;
     }
-
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -298,6 +335,16 @@ button:focus,
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
+  .navigation-list li {
+    display: block;
+    margin: 30px;
+    }
+
+    .img_logo {
+      width: 225px;
+      height: 60px;
+    }
 }
 
 @media all and (max-width: 780px) {
@@ -314,14 +361,4 @@ button:focus,
   h1 {
     font-size: 22px;
   }
-
-  .navigation-list li {
-    display: block;
-    margin: 30px;
-    }
-
-    .img_logo {
-      width: 225px;
-      height: 60px;
-    }
 }
