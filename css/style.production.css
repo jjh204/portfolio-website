@@ -305,44 +305,26 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
-
-  .page-header {
-    display: block;
-  }
-
-  .navigation-list li {
-    display: inline;
-    margin: 5px;
-  }
-
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     }
 
-  .portrait_img {
+    .portrait_img {
     float: none;
     margin: auto;
     }
 
-  svg {
+    svg {
     max-width: 400px;
     }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
-  .navigation-list li {
-    display: block;
-    margin: 30px;
-    }
-
     .img_logo {
-      text-align: left;
       width: 225px;
       height: 60px;
     }
@@ -361,5 +343,18 @@ button:focus,
 
   h1 {
     font-size: 22px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .navigation-list li {
+    display: inline;
+    margin: 5px;
+  }
+
+  .img_logo {
+    text-align: left;
   }
 }

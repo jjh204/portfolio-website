@@ -236,26 +236,16 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
-
-  .page-header {
-    display: block;
-  }
-
-  .navigation-list li {
-    display: inline;
-    margin: 5px;
-  }
-
   .grid {
     grid-template-columns: 1fr;
     }
 
-  .portrait_img {
+    .portrait_img {
     float: none;
     margin: auto;
     }
 
-  svg {
+    svg {
     max-width: 400px;
     }
 }
@@ -265,13 +255,7 @@ button:focus,
     grid-template-columns: 1fr 1fr;
   }
 
-  .navigation-list li {
-    display: block;
-    margin: 30px;
-    }
-
     .img_logo {
-      text-align: left;
       width: 225px;
       height: 60px;
     }
@@ -290,5 +274,18 @@ button:focus,
 
   h1 {
     font-size: 22px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .navigation-list li {
+    display: inline;
+    margin: 5px;
+  }
+
+  .img_logo {
+    text-align: left;
   }
 }
