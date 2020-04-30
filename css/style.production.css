@@ -286,6 +286,13 @@ button:focus,
       max-width: 400px;
     }
 
+    #contact-name,
+    #contact-email,
+    #contact-tel,
+    #contact-message {
+        width: auto;
+      }
+
     svg {
       max-width: 400px;
     }
