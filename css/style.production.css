@@ -131,6 +131,10 @@ button:focus,
   font-weight: 700;
 }
 
+#copenhagen-skyline {
+  width: 98%;
+}
+
 @-webkit-keyframes bird1-move {
   from {
     -webkit-transform: translate(-2px, -69px);
@@ -238,7 +242,7 @@ button:focus,
 #contact-tel,
 #contact-message {
   display: block;
-  width: 100%;
+  width: 95%;
   margin: 15px;
 }
 
