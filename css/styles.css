@@ -232,7 +232,6 @@ button:focus,
 
   .portrait_img {
     float: none;
-    margin: 0 auto;
   }
 
   svg {
@@ -273,5 +272,9 @@ button:focus,
   .img_logo {
     width: 225px;
     height: 60px;
+  }
+
+  .profile {
+    margin: 0 auto;
   }
 }
