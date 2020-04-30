@@ -231,11 +231,12 @@ button:focus,
   }
 
   .profile {
-    margin: auto;
+    margin: 0 auto;
   }
 
   .portrait_img {
     float: none;
+    padding-top: 20px;
   }
 
   svg {
