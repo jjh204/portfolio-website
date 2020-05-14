@@ -33,14 +33,22 @@
   <h1>Contact Me</h1>
     <!-- need to add action for where the data should go-->
     <form action="#" method="post" id="contact-form">
-      <label class="standard-label" for="contact-name">Name*:</label>
-      <input type="text" id="contact-name" required>
-      <label class="standard-label" for="contact-email">E-mail*:</label>
-      <input type="email" id="contact-email" required>
-      <label class="standard-label" for="contact-tel">Telephone:</label>
-      <input type="tel" id="contact-tel">
-      <label class="standard-label" for="contact-message">Message (maximum 240 characters)*:</label>
-      <textarea maxlength="240" id="contact-message" required></textarea>
+      <div class="input-wrapper">
+        <label class="standard-label" for="contact-name">Name*:</label>
+        <input type="text" id="contact-name" name="contact_name" required>
+      </div>
+      <div class="input-wrapper">
+        <label class="standard-label" for="contact-email">E-mail*:</label>
+        <input type="email" id="contact-email" name="contact_email" required>
+      </div>
+      <div class="input-wrapper">
+        <label class="standard-label" for="contact-tel">Telephone:</label>
+        <input type="tel" id="contact-tel" name="contact_tel">
+      </div>
+      <div class="input-wrapper">
+        <label class="standard-label" for="contact-message">Message (maximum 240 characters)*:</label>
+        <textarea maxlength="240" id="contact-message" name="contact_message" required></textarea>
+      </div>
       <input type="submit" value="Send message" class="button send-button">
     </form>
     <br>
