@@ -28,6 +28,11 @@ a {
   max-width: 200px;
 }
 
+.img_logo:hover,
+.img_logo:focus {
+  max-width: 210px;
+}
+
 a:visited {
   color: #83adb5;
 }
@@ -311,6 +316,12 @@ button:focus,
   .img_logo {
     max-width: 150px;
     max-height: 30px;
+    }
+
+    .img_logo:hover,
+    .img_logo:focus {
+      max-width: 155px;
+      max-height: 32px;
     }
 
     .navigation-list li {
