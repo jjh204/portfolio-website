@@ -1,10 +1,12 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 body {
-  background-color: #ffffff;
+  background: #ffffff;
   color: #2e4045;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
@@ -16,21 +18,12 @@ body {
 h1 {
   font-family: 'Cardo', serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   font-variant: small-caps;
 }
 
 a {
   color: #66afad;
-}
-
-.img_logo {
-  max-width: 200px;
-}
-
-.img_logo:hover,
-.img_logo:focus {
-  max-width: 210px;
 }
 
 a:visited {
@@ -46,39 +39,34 @@ a:active {
   color: #2e4045;
 }
 
-.page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 1em;
-  border-bottom: 0.2px solid #83adb5;
+.bg-custom {
+  background-color: rgba(255, 255, 255, 1);
 }
 
-.page-header_item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+.navbar{
+  border-bottom: 1px solid #66afad;
 }
 
-.page-header_item:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-align: right;
+.img_logo {
+  max-width: 200px;
 }
 
-.navigation-list {
-  list-style-type: none;
+.img_logo:hover,
+.img_logo:focus {
+  opacity: 0.7;
 }
 
-.navigation-list li {
-  display: inline-block;
-  margin-left: 70px;
+.navbar-nav li {
+  color: #2e4045;
+  margin-right: 50px;
 }
 
-.navigation-list_item--active {
-  text-decoration: none;
+section#home-page {
+  margin-top: 180px;
+}
+
+section {
+  margin-top: 150px;
 }
 
 .profile {
@@ -91,6 +79,14 @@ a:active {
   width: 250px;
   margin-right: 3em;
   border-radius: 40%;
+}
+
+#hello-heading {
+  margin: 20px;
+}
+
+#my-code-button {
+  margin: 20px;
 }
 
 button {
@@ -133,6 +129,10 @@ button:focus,
 
 .skills-list {
   font-weight: 700;
+}
+
+svg {
+  margin: 0 auto;
 }
 
 @-webkit-keyframes bird1-move {
@@ -233,7 +233,7 @@ button:focus,
 
 #contact-form {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 10px;
   text-align: left;
 }
@@ -278,6 +278,7 @@ button:focus,
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-top: 130px;
 }
 
 .page_footer a {
@@ -300,6 +301,14 @@ button:focus,
     grid-template-columns: 1fr;
   }
 
+  .navbar-nav li {
+    margin: 0 auto;
+  }
+
+  section#home-page {
+    margin-top: 100px;
+  }
+
   .profile {
     margin: 0 auto;
   }
@@ -309,36 +318,28 @@ button:focus,
     margin: 25px auto;
   }
 
+  .img_logo {
+    max-width: 120px;
+    max-height: 25px;
+    }
+
   svg {
-    max-width: 400px;
+    max-width: 300px;
   }
 
-  .img_logo {
-    max-width: 150px;
-    max-height: 30px;
-    }
+  body {
+    font-size: 0.9em;
+  }
 
-    .img_logo:hover,
-    .img_logo:focus {
-      max-width: 155px;
-      max-height: 32px;
-    }
-
-    .navigation-list li {
-      display: block;
-      margin: 10px;
-      font-size: 14px;
-    }
+  .page_footer {
+    margin-top: 80px;
+  }
 }
 
 @media all and (min-width: 580px) and (max-width: 800px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .navigation-list li {
-    font-size: 16px;
   }
 }
 
@@ -351,13 +352,5 @@ button:focus,
   .grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  .navigation-list li {
-    margin-left: 20px;
   }
 }
