@@ -5,20 +5,14 @@
   --background: #ffffff;
   --font-weight: 400;
   --font-weight-bold: 700;
-  --font-size: 18px;
-  --font-size-heading: 40px;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background);
+  background: var(--background);
   color: var(--primary-color);
   font-family: 'Josefin Sans', sans-serif;
   font-weight: var(--font-weight);
-  font-size: var(--font-size);
+  font-size: 18px;
   line-height: 1.6;
   text-align: center;
 }
@@ -26,21 +20,12 @@ body {
 h1 {
   font-family: 'Cardo', serif;
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-heading);
+  font-size: 36px;
   font-variant: small-caps;
 }
 
 a {
   color: var(--secondary-color);
-}
-
-.img_logo {
-  max-width: 200px;
-}
-
-.img_logo:hover,
-.img_logo:focus {
-  max-width: 210px;
 }
 
 a:visited {
@@ -56,33 +41,34 @@ a:active {
   color: var(--primary-color);
 }
 
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 1em;
-  border-bottom: 0.2px solid var(--secondary-color-muted);
+.bg-custom {
+  background-color: rgba(255, 255, 255, 1);
 }
 
-.page-header_item {
-  flex: 0 1 200px;
+.navbar{
+  border-bottom: 1px solid var(--secondary-color);
 }
 
-.page-header_item:last-child {
-  flex-grow: 1;
-  text-align: right;
+.img_logo {
+  max-width: 200px;
 }
 
-.navigation-list {
-  list-style-type: none;
+.img_logo:hover,
+.img_logo:focus {
+  opacity: 0.7;
 }
 
-.navigation-list li {
-  display: inline-block;
-  margin-left: 70px;
+.navbar-nav li {
+  color: var(--primary-color);
+  margin-right: 50px;
 }
 
-.navigation-list_item--active {
-  text-decoration: none;
+section#home-page {
+  margin-top: 180px;
+}
+
+section {
+  margin-top: 150px;
 }
 
 .profile {
@@ -95,6 +81,14 @@ a:active {
   width: 250px;
   margin-right: 3em;
   border-radius: 40%;
+}
+
+#hello-heading {
+  margin: 20px;
+}
+
+#my-code-button {
+  margin: 20px;
 }
 
 button,
@@ -121,6 +115,10 @@ button:focus,
 
 .skills-list {
   font-weight: var(--font-weight-bold);
+}
+
+svg {
+  margin: 0 auto;
 }
 
 @keyframes bird1-move {
@@ -183,7 +181,7 @@ button:focus,
 
 #contact-form {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 10px;
   text-align: left;
 }
@@ -223,6 +221,7 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 130px;
 }
 
 .page_footer a {
@@ -244,6 +243,14 @@ button:focus,
     grid-template-columns: 1fr;
   }
 
+  .navbar-nav li {
+    margin: 0 auto;
+  }
+
+  section#home-page {
+    margin-top: 100px;
+  }
+
   .profile {
     margin: 0 auto;
   }
@@ -253,35 +260,27 @@ button:focus,
     margin: 25px auto;
   }
 
+  .img_logo {
+    max-width: 120px;
+    max-height: 25px;
+    }
+
   svg {
-    max-width: 400px;
+    max-width: 300px;
   }
 
-  .img_logo {
-    max-width: 150px;
-    max-height: 30px;
-    }
+  body {
+    font-size: 0.9em;
+  }
 
-    .img_logo:hover,
-    .img_logo:focus {
-      max-width: 155px;
-      max-height: 32px;
-    }
-
-    .navigation-list li {
-      display: block;
-      margin: 10px;
-      font-size: 14px;
-    }
+  .page_footer {
+    margin-top: 80px;
+  }
 }
 
 @media all and (min-width: 580px) and (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .navigation-list li {
-    font-size: 16px;
   }
 }
 
@@ -294,13 +293,5 @@ button:focus,
   .grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  .navigation-list li {
-    margin-left: 20px;
   }
 }
