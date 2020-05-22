@@ -26,6 +26,7 @@ h1 {
 
 a {
   color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 a:visited {
@@ -39,6 +40,7 @@ a:focus {
 
 a:active {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .bg-custom {
@@ -47,6 +49,10 @@ a:active {
 
 .navbar{
   border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav-item.active {
+  text-decoration: none;
 }
 
 .img_logo {
@@ -60,7 +66,11 @@ a:active {
 
 .navbar-nav li {
   color: var(--primary-color);
-  margin-right: 50px;
+  margin-right: 30px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
 }
 
 section#home-page {
