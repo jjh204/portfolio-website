@@ -237,6 +237,20 @@ svg {
   grid-row: 1 / 4;
 }
 
+.chat_thumbnail {
+  width: 175px;
+  height: 300px;
+  padding: 15px;
+}
+
+.movie_thumbnail {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 220px;
+  padding: 15px;
+}
+
 #contact-form {
   max-width: 500px;
   margin: 20px auto;
@@ -340,6 +354,13 @@ svg {
   .page_footer {
     margin-top: 30px;
   }
+
+  .chat_thumbnail {
+    width: 125px;
+    height: 250px;
+    padding: 10px;
+  }
+
 }
 
 @media all and (min-width: 580px) and (max-width: 800px) {
@@ -359,4 +380,5 @@ svg {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
 }
