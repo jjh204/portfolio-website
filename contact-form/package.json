@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "nodemailer": "^6.4.17"
+    "nodemailer": "^7.0.11"
   },
   "devDependencies": {},
   "scripts": {
